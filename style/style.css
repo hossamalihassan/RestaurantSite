@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+}
+
+body, html {scroll-behavior: smooth;}
+
+body {
+    background-color: rgb(255, 227, 227);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Josefin;
+}
+
+@font-face {
+    font-family: Josefin;
+    src: url(/fonts/JosefinSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: smooch;
+    src: url(/fonts/Smooch-Regular.ttf);
+}
+
+
+/* Header */
+header {
+    background-color: red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(12, 27, 39, 0.5);
+    z-index: 3;
+}
+
+header .topnav {
+    z-index: 7;
+    width: 100%;    
+    overflow: hidden;
+    height: 9%;
+    position: fixed;
+    text-align: center;
+}
+
+header .links {
+    padding: 13px;
+    margin: auto;
+    width: 40%;
+    height: 1rem;
+    background-color: rgba(166, 58, 0, 0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+header .topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out color;
+}
+
+header .topnav a:hover {
+    color: #ffb892;
+}
+
+header .content {
+    position: relative;
+    z-index: 5;
+}
+
+header .content .title {
+    color: #fff;
+    text-align: center;
+    padding-top: 19%;
+    font-size: 80px; 
+    font-family: smooch;
+}
+
+header .content .des{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -15px;
+}
+
+/* Food Section */
+.sec {
+    width: 70%;
+    margin: auto;
+    margin-top: 10%;
+    background: linear-gradient(to right, #f12711, #f5af19);
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    padding-bottom: 70px 
+}
+
+.sec .head h2{
+    padding-top: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.sec .head p{
+    color: rgb(223, 223, 223);
+    font-size: 13px;
+    padding-top: 30px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.sec .content {
+    display: grid;
+    margin: auto;
+    width: 90%;
+}
+
+.sec .content .item{
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    background-color: rgba(88, 55, 0, 0.2);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.sec .content .item img{
+    width: 20%;
+    float: left;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.sec .content .item .name {
+    margin-left: 22%;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.sec .content .item .des{
+    width: 70%;
+    margin-left: 22%;
+}
+
+.sec .content .item .price{
+    margin-left: 26.5%;
+    margin-top: 3%;
+    font-size: 19px;
+}
+
+.sec .content .item .price span{
+    color:rgb(5, 231, 107);
+    margin-left: 3px;
+}
+
+.sec .content .item button.order{
+    float: left;
+    margin-left: 2%;
+    background-color: #FFAD81;
+    border: 1px solid #712800;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 30px;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+    margin-top: 3px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sec .content .item button.order:hover{
+    background: #9E3700;
+    color: #FFDECD;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* Opening hours */
+.hours {
+    margin: auto;
+    margin-top: 110px;
+    height: 50vh;
+    text-align: center;
+    background-color: rgba(145, 87, 0, 0.6);
+    width: 50%;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.hours img {
+    width: 70px;
+    margin-top: 30px;
+}
+
+.hours .header h3{
+    margin-bottom: 30px;
+}
+
+.hours .meal {
+    margin-top: 20px;
+}
+
+.hours .meal span {
+    color: #282828;
+}
+
+
+/* Contact */
+.contact {
+    width: 100%;
+    background-color: #282828;
+    margin-top: 130px;
+    color: #fff
+}
+
+.contact .content{
+    padding: 60px;
+    padding-top: 120px;
+}
+
+.contact .content h3{
+    padding-top: 10px;
+}
+
+.contact .content h3 span{
+    color: rgb(168, 164, 164)
+}
+
+.contact .content .links{
+    margin-top: 90px;
+    margin-bottom: 80px;
+}
+
+.contact .content h3 a{
+    padding-top: 20px;
+    text-decoration: none;
+    transition: 0.3s color ease-in-out;
+}
+
+.contact .content h3 #facebook{
+    color: #1877f2;
+}
+
+.contact .content h3 #facebook:hover{
+    color: #3b5998;
+}
+
+.contact .content h3 #twitter{
+    color: #1da1f2;
+}
+
+.contact .content h3 #twitter:hover{
+    color: #e1e8ed;
+}
+
+.contact .content h3 #insta{
+    color: #c32aa3;
+}
+
+.contact .content h3 #insta:hover{
+    color: #7232bd;
+}
+
+.contact .content h3 #youtube{
+    color: #ff0000;
+}
+
+.contact .content h3 #youtube:hover{
+    color: #fff;
+}
